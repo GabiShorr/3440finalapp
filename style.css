@@ -5,11 +5,33 @@ body {
 /* nav bar */
 nav.nav-bar {
     text-align: center;
+    background-color: #F4C3C2;
+    padding:25px;
+    margin-bottom: 0px;
 }
 /* header */
 h1 {
     font-size: 50px;
     color:#4B3621;
+    font-family: "amandine", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+p {
+    color:#B2DFDC;
+    background-color: #4B3621;
+    padding:10px;
+    margin:0px;
+    font-family: "playfair-display", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h2 {
+    font-family: "amandine", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 40px;
 }
 /* recipes */
 ul li {
@@ -21,6 +43,9 @@ a {
     text-decoration: none !important;
     color:#4B3621;
     padding:5px;
+    font-family: "playfair-display", serif;
+font-weight: 400;
+font-style: normal;
 }
 a:hover , a:active , a:focus {
     text-decoration: none !important;
@@ -32,6 +57,7 @@ div.section-1 {
     font-size: 30px;
     
 }
+
 
 /* countdown */
 .timer {
