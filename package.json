@@ -1,0 +1,24 @@
+{
+    "name": "pwa-camera-persisted",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+      "start": "serve",
+      "build": "echo This is a static template, there is no bundler or bundling involved!"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/GabiShorr/3440finalapp.git"
+    },
+    "keywords": [],
+    "author": "Ives van Hoorne",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/GabiShorr/3440finalapp.git"
+    },
+    "homepage": "https://github.com/GabiShorr/3440finalapp.git",
+    "devDependencies": {
+      "serve": "^11.2.0"
+    }
+  }

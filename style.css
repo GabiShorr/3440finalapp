@@ -1,0 +1,87 @@
+/*========== home page ==========*/
+body {
+    background-color: #FFF6E9;
+}
+/* nav bar */
+nav.nav-bar {
+    text-align: center;
+}
+/* header */
+h1 {
+    font-size: 50px;
+    color:#4B3621;
+}
+/* recipes */
+ul li {
+    list-style-type: none;
+   
+}
+
+a {
+    text-decoration: none !important;
+    color:#4B3621;
+    padding:5px;
+}
+a:hover , a:active , a:focus {
+    text-decoration: none !important;
+    color:#F4C3C2;
+}
+
+div.section-1 {
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+/* countdown */
+.timer {
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 24px 32px;
+    border-radius: 30px;
+    background: #4B3621;
+    color:white;
+    margin:50px;
+  }
+  .timer-align {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding:20px;
+    
+  }
+  .timer-title {
+    padding-right:50px;
+  }
+  .timer__part {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .timer__btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: none;
+    color: #4B3621;
+    background: #F4C3C2;
+    cursor: pointer;
+  }
+  
+  .timer__btn--start {
+    background: #B2DFDC;
+  }
+  
+  .timer__btn--stop {
+    background: #ff0256;
+  }
+
+  /* camera */
+  .camera {
+    text-align: center;
+    color:#4B3621
+  }
+input {
+    padding:10px;
+}
