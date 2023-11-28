@@ -228,3 +228,8 @@ button {
    background-color: #4B3621; 
   color: #FFF6E9;
 } */
+/*========== Offline Page ==========*/
+h1.offline-text {
+  text-align: center;
+  color:#4B3621;
+}
