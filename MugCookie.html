@@ -4,25 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/gps7sux.css">
     <title>Recipe Tracker</title>
 </head>
 <body>
     <nav class="nav-bar">
         <h1 class="title-h1">Recipe Tracker!</h1>
-        <ul class="nav-ul">
-            <a href="/BananaBread.html"><li>Banana Bread</li></a>
-            <a href="/CCCookies.html"><li>Chocolate Chip Cookies</li></a>
-            <a href="/MugCookie.html"><li>Mug Cookie</li></a>
-            <a href="/MugCake.html"><li>Mug Cake</li></a>
-            <a href="/Crepes.html"><li>Crepes</li></a>
-            <a href="/SugarCookies.html"><li>Sugar Cookies</li></a>
-            <a href="/AppleBread.html"><li>Apple Bread</li></a>
-            <a href="/PumpkinBread.html"><li>Pumpkin Bread</li></a>
-            <a href="/Brownies.html"><li>Brownies</li></a>
-            <a href="/OatmealRasinCookies.html"><li>Oatmeal Raisin Cookies</li></a>
-            <a href="/ChocolateLoversTrifle.html"><li>Chocolate Lovers Trifle</li></a>
-            <a href="/Pudding.html"><li>Pudding</li></a>
-        </ul>
+        <ion-menu content-id="main-content">
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Recipes</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ul class="nav-ul">
+              <a href="/index.html"><li>Home</li></a>
+                <a href="/BananaBread.html"><li>Banana Bread</li></a>
+                <a href="/CCCookies.html"><li>Chocolate Chip Cookies</li></a>
+                <a href="/MugCookie.html"><li>Mug Cookie</li></a>
+                <a href="/MugCake.html"><li>Mug Cake</li></a>
+                <a href="/Crepes.html"><li>Crepes</li></a>
+                <a href="/SugarCookies.html"><li>Sugar Cookies</li></a>
+                <a href="/ApplePie.html"><li>Apple Pie</li></a>
+                <a href="/PumpkinBread.html"><li>Pumpkin Bread</li></a>
+                <a href="/Brownies.html"><li>Brownies</li></a>
+                <a href="/OatmealRasinCookies.html"><li>Oatmeal Raisin Cookies</li></a>
+                <a href="/ChocolateLoversTrifle.html"><li>Chocolate Lovers Trifle</li></a>
+                <a href="/Pudding.html"><li>Pudding</li></a>
+            </ul>
+          </ion-menu>
+          <div class="ion-page" id="main-content">
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <ion-title>Recipes</ion-title>
+              </ion-toolbar>
+            </ion-header>
+          </div>
     </nav>
+    <div class="apple-1">
+        <h1>Microwave Mug Cookie</h1>
+        <a href="https://tasty.co/recipe/microwave-chocolate-chip-cookie" target="_blank">By: Tasty.co</a>
+    </div>
+    <div class="ingredients-list">
+        <h4 class="steps-header">Ingredients - 1 serving</h4>
+        <ion-checkbox class="checkbox" label-placement="end">2 tablespoons butter</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">1 tablespoon brown sugar</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">1 tablespoon sugar</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">¼ teaspoon baking powder</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">⅛ teaspoon salt</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">¼ teaspoon vanilla extract</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">3 tablespoons flour</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">2 tablespoons chocolate chips</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">OPTIONAL - ice cream!</ion-checkbox>
+    </div>
+    <div class="steps-list">
+        <h4 class="steps-header">Steps:</h4>
+        <ion-checkbox class="checkbox" label-placement="end"><b>STEP 1:</b> Add 2 tbsp butter, 1 tbsp brown sugar, 1 tbsp sugar, ¼ tsp baking powder, ⅛ tsp salt and ¼ tsp vanilla in a bowl and mix.</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end"><b>STEP 2:</b> Next, add 3 tbsp flour and 2 tbsp chocolate chips and mix thoroughly. Transfer the mix to a microwave-friendly bowl and heat for 60 seconds. Top with ice cream.</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end"><b>STEP 3:</b> Enjoy!</ion-checkbox>
+        <br />
+        <p><b>*PRO TIP - </b> Double ingredients for more cookie! </p>
+    </div>
 </body>
 </html>

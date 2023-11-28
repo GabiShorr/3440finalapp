@@ -4,21 +4,26 @@
     "description": "",
     "main": "index.html",
     "scripts": {
-      "start": "serve",
-      "build": "echo This is a static template, there is no bundler or bundling involved!"
+        "start": "serve",
+        "build": "echo This is a static template, there is no bundler or bundling involved!"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/GabiShorr/3440finalapp.git"
+        "type": "git",
+        "url": "https://github.com/GabiShorr/3440finalapp.git"
     },
     "keywords": [],
     "author": "Ives van Hoorne",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/GabiShorr/3440finalapp.git"
+        "url": "https://github.com/GabiShorr/3440finalapp.git"
     },
     "homepage": "https://github.com/GabiShorr/3440finalapp.git",
     "devDependencies": {
-      "serve": "^11.2.0"
+        "serve": "^14.2.1"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "express": "^4.18.2",
+        "mongoose": "^8.0.1"
     }
-  }
+}

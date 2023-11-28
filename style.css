@@ -4,10 +4,14 @@ body {
 }
 /* nav bar */
 nav.nav-bar {
-    text-align: center;
     background-color: #F4C3C2;
-    padding:25px;
+     padding:25px; 
     margin-bottom: 0px;
+    
+}
+
+.menu-inner {
+  margin:0px !important;
 }
 /* header */
 h1 {
@@ -16,6 +20,7 @@ h1 {
     font-family: "amandine", sans-serif;
 font-weight: 700;
 font-style: normal;
+text-align: center;
 }
 p {
     color:#B2DFDC;
@@ -47,9 +52,10 @@ a {
 font-weight: 400;
 font-style: normal;
 }
+
 a:hover , a:active , a:focus {
     text-decoration: none !important;
-    color:#F4C3C2;
+    color:#ff0256;
 }
 
 div.section-1 {
@@ -94,9 +100,16 @@ div.section-1 {
     background: #F4C3C2;
     cursor: pointer;
   }
+
+  .timer__btn:hover {
+    background: #f09997;
+  }
   
   .timer__btn--start {
     background: #B2DFDC;
+  }
+  .timer__btn--start:hover {
+    background: #187f78;
   }
   
   .timer__btn--stop {
@@ -111,3 +124,107 @@ div.section-1 {
 input {
     padding:10px;
 }
+
+/* banana bread page */
+h1.baked-good {
+  font-family: "amandine", sans-serif;
+font-weight: 700;
+font-style: normal;
+color:#4B3621;
+text-align: center;
+}
+
+.steps-header {
+  font-family: "playfair-display", serif;
+font-weight: 700;
+font-style: normal;
+font-size:30px;
+color:#4B3621;
+}
+
+div.ingredients-list {
+  margin:45px;
+  text-wrap: wrap;
+}
+
+div.steps-list {
+  margin:45px;
+  color:#4B3621;
+}
+
+.checkbox {
+  font-size: 18px;
+  font-family: "playfair-display", serif;
+font-weight: 400;
+font-style: normal;
+color:#4B3621;
+line-height: 35px;
+}
+
+ion-checkbox {
+  --size: 32px;
+  --checkbox-background-checked: #B2DFDC;
+}
+
+ion-checkbox::part(container) {
+  border-radius: 6px;
+  border: 2px solid #B2DFDC;
+}
+
+/* apple pie recipe */
+div.apple-1 {
+  text-align: center;
+}
+.apple-1 h1 {
+  margin-bottom:0px;
+}
+
+/* login page */
+div.login {
+  background-color: #FFF6E9;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #F4C3C2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  color: #4B3621;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #4B3621;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #A8CFCA;
+  color: #4B3621;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* button:hover {
+   background-color: #4B3621; 
+  color: #FFF6E9;
+} */

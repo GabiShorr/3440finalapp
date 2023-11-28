@@ -3,26 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/gps7sux.css">
     <link rel="stylesheet" href="/style.css">
     <title>Recipe Tracker</title>
 </head>
 <body>
     <nav class="nav-bar">
         <h1 class="title-h1">Recipe Tracker!</h1>
-        <ul class="nav-ul">
-            <a href="/BananaBread.html"><li>Banana Bread</li></a>
-            <a href="/CCCookies.html"><li>Chocolate Chip Cookies</li></a>
-            <a href="/MugCookie.html"><li>Mug Cookie</li></a>
-            <a href="/MugCake.html"><li>Mug Cake</li></a>
-            <a href="/Crepes.html"><li>Crepes</li></a>
-            <a href="/SugarCookies.html"><li>Sugar Cookies</li></a>
-            <a href="/AppleBread.html"><li>Apple Bread</li></a>
-            <a href="/PumpkinBread.html"><li>Pumpkin Bread</li></a>
-            <a href="/Brownies.html"><li>Brownies</li></a>
-            <a href="/OatmealRasinCookies.html"><li>Oatmeal Raisin Cookies</li></a>
-            <a href="/ChocolateLoversTrifle.html"><li>Chocolate Lovers Trifle</li></a>
-            <a href="/Pudding.html"><li>Pudding</li></a>
-        </ul>
+        <ion-menu content-id="main-content">
+            <ion-header>
+              <ion-toolbar>
+                
+                <ion-title>Recipes</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ul class="nav-ul">
+                <a href="/index.html"><li>Home</li></a>
+                <a href="/BananaBread.html"><li>Banana Bread</li></a>
+                <a href="/CCCookies.html"><li>Chocolate Chip Cookies</li></a>
+                <a href="/MugCookie.html"><li>Mug Cookie</li></a>
+                <a href="/MugCake.html"><li>Mug Cake</li></a>
+                <a href="/Crepes.html"><li>Crepes</li></a>
+                <a href="/SugarCookies.html"><li>Sugar Cookies</li></a>
+                <a href="/ApplePie.html"><li>Apple Pie</li></a>
+                <a href="/PumpkinBread.html"><li>Pumpkin Bread</li></a>
+                <a href="/Brownies.html"><li>Brownies</li></a>
+                <a href="/OatmealRasinCookies.html"><li>Oatmeal Raisin Cookies</li></a>
+                <a href="/ChocolateLoversTrifle.html"><li>Chocolate Lovers Trifle</li></a>
+                <a href="/Pudding.html"><li>Pudding</li></a>
+            </ul>
+          </ion-menu>
+          <div class="ion-page" id="main-content">
+            <ion-header>
+              <ion-toolbar>
+                <ion-buttons slot="start">
+                  <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <ion-title>Recipes</ion-title>
+              </ion-toolbar>
+            </ion-header>
+          </div>
     </nav>
+
+    <div class="ingredients-list">
+        <h1 class="baked-good">Chocolate Chip Cookies</h1>
+        <h4 class="steps-header">Ingredients</h4>
+        <ion-checkbox class="checkbox" label-placement="end">1 cup butter</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">2 eggs</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">3/4 cup white sugar</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">1 cup brown sugar</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">2 heaping tsp vanilla extract</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">2 1/4 cups all-purpose flour</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">1 tsp baking soda</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">1 tsp salt</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end">1 bag of chcocolate chips</ion-checkbox>
+    </div>
+    <div class="steps-list">
+        <h4 class="steps-header">Steps:</h4>
+        <ion-checkbox class="checkbox" label-placement="end"><b>STEP 1:</b> Preheat oven to 350 degrees</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end"><b>STEP 2:</b> Mix all wet ingredients in big bowl first (butter, eggs, sugar, vanilla extract)</ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end"><b>STEP 3:</b> Add in dry ingredients (flour, baking soda, salt) </ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end"><b>STEP 4:</b> Mash together in separate bowl (bananas, sour cream, cinnamon, (nutmeg)) </ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end"><b>STEP 5:</b> Combine everything together </ion-checkbox>
+        <br />
+        <ion-checkbox class="checkbox" label-placement="end"><b>STEP 6:</b> Put in bread pan, bake for 60 mins or until center is cooked</ion-checkbox>
+        <br />
+        <p><b>*PRO TIP - </b> If you are limited on space and supplies or are feeling lazy (like me) you can combine everything in 1 bowl!</p>
+    </div>
 </body>
 </html>

@@ -161,3 +161,59 @@ async function printPhotos(changedData = null) {
  * are existing photos in the database.
  */
 printPhotos();
+
+/* login page */ 
+function register() {
+  var newUsername = document.getElementById("newUsername").value;
+  var newPassword = document.getElementById("newPassword").value;
+
+  // Send registration data to your server
+  fetch('http://localhost:3000/register', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          username: newUsername,
+          password: newPassword,
+      }),
+  })
+  .then(response => response.json())
+  .then(data => {
+      alert('Registration successful. You can now log in.');
+      // Optionally, you can redirect the user to the login section
+      // window.location.href = "#loginFormContainer";
+  })
+  .catch(error => {
+      console.error('Error:', error);
+      alert('Registration failed. Please try again.');
+  });
+}
+
+function login() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  // Send login data to your server
+  fetch('http://localhost:3000/login', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          username: username,
+          password: password,
+      }),
+  })
+  .then(response => response.json())
+  .then(data => {
+      alert('Login successful. Redirect to main page or dashboard.');
+      // Optionally, you can redirect the user to the main page or dashboard
+      // window.location.href = "main.html";
+  })
+  .catch(error => {
+      console.error('Error:', error);
+      alert('Login failed. Please check your username and password.');
+  });
+}
+
