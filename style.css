@@ -88,6 +88,7 @@ div.section-1 {
   .timer__part {
     font-size: 36px;
     font-weight: bold;
+    margin-top:43px;
   }
   
   .timer__btn {
@@ -99,6 +100,7 @@ div.section-1 {
     color: #4B3621;
     background: #F4C3C2;
     cursor: pointer;
+    margin-top:43px;
   }
 
   .timer__btn:hover {

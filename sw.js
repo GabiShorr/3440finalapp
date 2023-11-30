@@ -8,7 +8,7 @@ const CACHE = "pwabuilder-page";
 const offlineFallbackPage = "/offline.html";
 
 const offlineAssets = [
-    "/style.css"
+    "/style.css" 
 ]
 
 self.addEventListener("message", (event) => {
@@ -21,6 +21,7 @@ self.addEventListener('install', async (event) => {
   event.waitUntil(
     caches.open(CACHE)
       .then((cache) => {
+        console.log("Installing Service Worker and caching files")
         cache.add(offlineFallbackPage)
 
         cache.addAll(offlineAssets);
@@ -48,7 +49,7 @@ self.addEventListener('fetch', (event) => {
 
         const cache = await caches.open(CACHE);
         console.log(event.request)
-        const cachedResp = await cache.match(event.request);
+        const cachedResp = await cache.match(offlineFallbackPage);
         console.log(cachedResp)
         return cachedResp;
       }
